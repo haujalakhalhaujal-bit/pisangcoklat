@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Piscok Lumer • Pisang Coklat Premium</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(145deg, #fff8e7 0%, #ffefd5 100%);
+      font-family: 'Segoe UI', system-ui, 'Poppins', -apple-system, sans-serif;
+      padding: 1.5rem;
+      color: #3b2a1f;
+    }
+
+    .card {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #ffffffdd;
+      backdrop-filter: blur(2px);
+      border-radius: 3rem;
+      padding: 1.8rem 1.8rem 2.2rem;
+      box-shadow: 0 25px 45px -12px rgba(0,0,0,0.25);
+      border: 1px solid #ffddb0;
+    }
+
+    /* badge best seller */
+    .best-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #fef9e3;
+      border-radius: 60px;
+      padding: 6px 16px;
+      font-weight: 600;
+      font-size: 0.8rem;
+      color: #b45309;
+      border: 1px solid #fed7aa;
+      margin-bottom: 1.2rem;
+    }
+
+    .best-badge span {
+      font-size: 1rem;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    h1 .lumer {
+      color: #e65c1e;
+      background: linear-gradient(135deg, #e65c1e, #f59e0b);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .sub {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #b45309;
+      margin-top: 0.25rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid #f59e0b;
+      padding-left: 12px;
+    }
+
+    .deskripsi {
+      color: #5c3a1e;
+      line-height: 1.5;
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+    }
+
+    /* area gambar produk */
+    .product-image {
+      background: #fff2e0;
+      border-radius: 2rem;
+      padding: 1rem;
+      margin: 1rem 0 1.5rem;
+      text-align: center;
+      box-shadow: inset 0 0 0 1px #ffefcf, 0 10px 20px rgba(0,0,0,0.05);
+    }
+
+    .product-image svg {
+      max-width: 100%;
+      height: auto;
+      border-radius: 1.5rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* detail keunggulan */
+    .detail-list {
+      background: #fffbf0;
+      border-radius: 1.5rem;
+      padding: 1.2rem 1.5rem;
+      margin: 1.5rem 0;
+      border: 1px solid #ffe0b5;
+    }
+
+    .detail-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 8px 0;
+      font-size: 1rem;
+      border-bottom: 1px dashed #ffe0b5;
+    }
+
+    .detail-item:last-child {
+      border-bottom: none;
+    }
+
+    .detail-item strong {
+      color: #c2410c;
+    }
+
+    /* harga & tombol */
+    .price {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #c2410c;
+      margin: 0.5rem 0 0.8rem;
+    }
+
+    .btn-order {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+      padding: 14px 20px;
+      border-radius: 60px;
+      transition: 0.2s;
+      margin: 1rem 0 1.2rem;
+      box-shadow: 0 8px 18px rgba(37,211,102,0.3);
+    }
+
+    .btn-order:hover {
+      background: #20b859;
+      transform: scale(1.01);
+    }
+
+    /* testimoni */
+    .testi {
+      background: #fffaf0;
+      border-radius: 1.2rem;
+      padding: 1rem 1.2rem;
+      margin: 1rem 0;
+      border-left: 5px solid #f59e0b;
+      font-size: 0.9rem;
+    }
+
+    .stars {
+      color: #fbbf24;
+      letter-spacing: 2px;
+      margin-bottom: 4px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.7rem;
+      color: #aa7a4a;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ffddb0;
+    }
+
+    @media (max-width: 500px) {
+      .card {
+        padding: 1.2rem;
+      }
+      h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="card">
+  <!-- Best Seller badge -->
+  <div class="best-badge">
+    <span>🟢</span> Best Seller! <strong>1000+</strong> Terjual
+  </div>
+
+  <h1>Piscok <span class="lumer">Lumer</span></h1>
+  <div class="sub">Pisang Coklat Premium</div>
+
+  <div class="deskripsi">
+    Coklat meleleh sempurna dalam setiap gigitannya. Dibuat dengan pisang pilihan dan coklat berkualitas.
+  </div>
+
+  <!-- GAMBAR PRODUK (SVG ilustrasi pisang coklat) -->
+  <div class="product-image">
+    <svg width="400" height="300" viewBox="0 0 500 380" xmlns="http://www.w3.org/2000/svg" style="background: #fae8c8; border-radius: 28px;">
+      <!-- latar belakang lembut -->
+      <rect width="500" height="380" fill="#fae8c8" rx="28" ry="28" />
+      <!-- piring / alas -->
+      <ellipse cx="250" cy="280" rx="150" ry="35" fill="#e6d5b8" stroke="#d4b48c" stroke-width="2" />
+      <!-- pisang goreng / lumpia piscok bentuk tabung melengkung -->
+      <rect x="160" y="140" width="180" height="90" rx="30" fill="#f5bc70" stroke="#d49c44" stroke-width="2" />
+      <rect x="170" y="150" width="160" height="70" rx="25" fill="#f8cf8c" />
+      <!-- coklat leleh di atas -->
+      <path d="M190 170 Q250 150 310 170 Q320 200 300 210 Q250 225 200 210 Q180 200 190 170Z" fill="#6b3e1c" />
+      <path d="M210 185 Q250 170 290 185 Q285 200 250 205 Q215 200 210 185Z" fill="#8b5a2b" />
+      <!-- cipratan coklat -->
+      <circle cx="230" cy="175" r="6" fill="#4a2a10" />
+      <circle cx="270" cy="172" r="5" fill="#4a2a10" />
+      <!-- tetesan coklat meleleh -->
+      <path d="M195 195 Q193 210 197 220 Q200 225 203 220 Q207 210 205 195Z" fill="#5a3418" />
+      <path d="M295 198 Q292 215 296 225 Q300 230 304 225 Q308 215 305 198Z" fill="#5a3418" />
+      <!-- garnish / taburan -->
+      <circle cx="250" cy="195" r="3" fill="#f3d572" />
+      <circle cx="240" cy="200" r="2.5" fill="#f3d572" />
+      <circle cx="260" cy="198" r="2" fill="#f3d572" />
+      <!-- teks piscok lumer -->
+      <text x="250" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="22" fill="#a55117">Piscok Lumer</text>
+      <text x="250" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#b96f2a">✨ Pisang Coklat Meleleh ✨</text>
+    </svg>
+  </div>
+
+  <!-- Detail produk sesuai permintaan -->
+  <div class="detail-list">
+    <div class="detail-item">
+      <span>🍌</span> <strong>Pisang Raja Matang</strong> – manis alami, tekstur lembut
+    </div>
+    <div class="detail-item">
+      <span>🍫</span> <strong>Coklat Premium</strong> – meleleh sempurna di mulut
+    </div>
+    <div class="detail-item">
+      <span>🥟</span> <strong>Kulit Lumpia Renyah</strong> – digoreng hingga keemasan
+    </div>
+    <div class="detail-item">
+      <span>⭐</span> <strong>Homemade higienis</strong> – tanpa pengawet
+    </div>
+  </div>
+
+  <div class="price">
+    Mulai dari <span style="font-size: 2rem;">Rp 12.000</span>
+  </div>
+
+  <a href="https://wa.me/0895361801289?text=Halo%20Piscok%20Lumer!%20Saya%20mau%20pesan%20piscoknya%20dong%20🍫" class="btn-order" target="_blank" rel="noopener noreferrer">
+    💬 Pesan via WhatsApp
+  </a>
+
+  <!-- Testimoni -->
+  <div class="testi">
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+    <strong>Rina S.</strong> — "Piscoknya beneran lumer! Coklatnya premium, pisang manis. Best seller layak!"
+  </div>
+  <div class="testi">
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+    <strong>Andi P.</strong> — "Renyah di luar, lumer di dalam. Anak-anak suka, bakal repeat order."
+  </div>
+
+  <footer>
+    © 2025 Piscok Lumer • Produksi rumahan berkualitas • Tanpa pengawet
+  </footer>
+</div>
+</body>
+</html>
